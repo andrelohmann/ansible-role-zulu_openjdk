@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  role_name: zulu_openjdk
+  author: andrelohmann
+  description: ansible galaxy role to install zulu OpenJDK
+  company: smartformer UG
+
+  license: MIT
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: Ubuntu
+      versions:
+      - xenial
+      - bionic
+
+  galaxy_tags:
+  - zulu_openjdk
+...
