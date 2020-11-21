@@ -22,16 +22,14 @@
 
 - name: install zulu repository for OpenJDK
   apt_repository:
-    repo: deb http://repos.azulsystems.com/ubuntu stable main
+    repo: deb [ arch=amd64 ] https://repos.azul.com/zulu/deb/ stable main
     state: present
     filename: zulu-openjdk
 
 - name: install OpenJDK
   apt:
-    name: "zulu-{{ zulu_openjdk_version }}"
+    name: "zulu{{ zulu_openjdk_version }}"
     state: latest
     dpkg_options: 'force-confnew,force-confdef'
     autoremove: yes
     update_cache: yes
-
-...

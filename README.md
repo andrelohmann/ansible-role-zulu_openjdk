@@ -13,7 +13,11 @@ This role requires ubuntu.
 Role Variables
 --------------
 
-    zulu_openjdk_version: "12"
+    zulu_openjdk_version: "15"
+
+Find available Versions [here](https://docs.azul.com/zulu/zuludocs/ZuluUserGuide/InstallingZulu/InstallOnLinuxUsingDebRepository.htm).
+
+15, 13, 11, 8, or 7 at the time of writing.
 
 Example Playbook
 ----------------
